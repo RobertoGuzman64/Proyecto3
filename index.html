@@ -4,36 +4,59 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Juego</title>
+    <title>Call of Geeks</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <!-- CREANDO CANTIDAD DE PANTALLAS QUE VA A TENER EL JUEGO -->
+    <!-- PANTALLAS DEL JUEGO -->
 
-    <section id="pantalla1" onclick="cambiaPantalla(2)">
-    <div class="desingScreen1"></div>
-    </section>
-
-    <section id="pantalla2" onclick="cambiaPantalla(3)">
-    <div class="desingScreen2"></div>
-    </section>
-
-    <section id="pantalla3" onclick="cambiaPantalla(4)">
-    <div class="desingScreen3"></div>
+<!-- QUIERO METER ESA IMAGEN DE FONDO !! -->
+    <!-- <section id="screen1" onclick="cambiaPantalla(2)">
+    <div class="desingScreen1">
+        <img src="img/home.jpg" alt="">
+    </div>
+    </section> -->
+    <section id="screen1" onclick="cambiaPantalla(2)">
+        <div class="desingScreen1">
+            <img src="img/home.jpg">
+            <div class="cartelCallofGeeks">
+                <h1>CALL OF GEEKS</h1>
+            </div>
+            <div class="cartelJugar">
+                <h1>JUGAR</h1>
+            </div>
+        </div>
     </section>
     
-    <section id="pantalla4" onclick="cambiaPantalla(5)">
-        <div class="desingScreen4"></div>
+
+
+
+
+
+    <section id="screen2" style="display:none" onclick="cambiaPantalla(3)">
+    <div class="desingScreen2">
+        <img src="img/P2,3.jpg" alt="">
+    </div>
     </section>
 
+    <section id="screen3" style="display:none" onclick="cambiaPantalla(4)">
+    <div class="desingScreen3">
+        <img src="img/P2,3.jpg" alt="">
+    </div>
+    </section>
+    
+    <section id="screen4" style="display:none" onclick="cambiaPantalla(5)">
+        <div class="desingScreen4">
+            <img src="img/P4.jpg" alt="">
+        </div>
+    </section>
 
-
-
-
-
-
-
+    <section id="screen5" style="display:none"onclick="cambiaPantalla(1)">
+        <div class="desingScreen5">
+            <img src="img/GAMEOVER.jpg" alt="">
+        </div>
+    </section>
 
 
 
