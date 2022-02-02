@@ -46,8 +46,85 @@ body {
 .desingScreen2{
     height: 100vh;
     width: 100vw;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: space-evenly;
     background-image: url("../img/P2\,3.jpg");
 }
+.soldados{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+.soldado1{
+    background-image: url("../img/soldado1.jfif");
+    background-size: contain;
+    background-repeat:no-repeat;
+    height: 25em;
+    width: 15em;
+    margin-right: 3em;
+}
+.soldado2{
+    background-image: url("../img/soldado2.jfif");
+    background-size: contain;
+    background-repeat:no-repeat;
+    height: 25em;
+    width: 15em;
+    margin-right: 3em;
+}
+.soldado3{
+    background-image: url("../img/soldado3.jpg");
+    background-size: contain;
+    background-repeat:no-repeat;
+    height: 25em;
+    width: 15em;
+    margin-right: 3em;
+}
+.soldado4{
+    background-image: url("../img/soldado4.png");
+    background-size: contain;
+    background-repeat:no-repeat;
+    height: 25em;
+    width: 15em;
+    margin-right: 3em;
+}
+.soldado5{
+    background-image: url("../img/soldado5.jpg");
+    background-size: contain;
+    background-repeat:no-repeat;
+    height: 25em;
+    width: 15em;
+    margin-right: 3em;
+}
+.soldado6{
+    background-image: url("../img/soldado6.jpg");
+    background-size: contain;
+    background-repeat:no-repeat;
+    height: 25em;
+    width: 15em;
+}
+.cartelSeleccionar{
+    background-color: transparent;
+    color: white;
+    height: 10em;
+    width: 25em;
+    border-color: white;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 50em 50em 50em 50em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-block-end: 5em;
+}
+
+
+
 
 .desingScreen3{
     background-image: url("../img/P2\,3.jpg");

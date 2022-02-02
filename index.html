@@ -12,13 +12,13 @@
     <!-- PANTALLAS DEL JUEGO -->
 
 
-    <section id="screen1" onclick="cambiaPantalla(2)">
+    <section id="screen1">
         <div class="desingScreen1">
         <!-- <div class="desingScreen1" id="home"> -->
             <div class="cartelCallofGeeks">
                 <h1>CALL OF GEEKS</h1>
             </div>
-            <div class="cartelJugar">
+            <div class="cartelJugar" onclick="cambiaPantalla(2)">
                 <h1>JUGAR</h1>
             </div>
         </div>
@@ -27,12 +27,17 @@
 
     <section id="screen2" style="display:none" onclick="cambiaPantalla(3)">
     <div class="desingScreen2">
-        <div class="soldado1"></div>
-        <div class="soldado2"></div>
-        <div class="soldado3"></div>
-        <div class="soldado4"></div>
-        <div class="soldado5"></div>
-        <div class="soldado6"></div>
+        <div class="soldados">
+            <div class="soldado1"></div>
+            <div class="soldado2"></div>
+            <div class="soldado3"></div>
+            <div class="soldado4"></div>
+            <div class="soldado5"></div>
+            <div class="soldado6"></div>
+        </div>
+        <div class="cartelSeleccionar">
+            <h1>Selecciona un Soldado</h1>
+        </div>
     </div>
     </section>
 
@@ -51,8 +56,6 @@
         <div class="desingScreen5">
         </div>
     </section>
-
-
 
     <script src="js/coches.js"></script>
     <script src="js/main.js"></script>
