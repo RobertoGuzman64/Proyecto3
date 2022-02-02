@@ -4,26 +4,24 @@ body {
     height: 100vh;
     width: 100vw;
 }
-/* PANTALLAS DEL JUEGO */
-img{
-    height: 100vh;
-    width: 100vw;
-}
-.desingScreen1{
-    background-image: url("img/home.jpg");
-    height: 100vh;
-    width: 100vw;
 
+/* PANTALLAS DEL JUEGO */
+
+.desingScreen1{
+    height: 100vh;
+    width: 100vw;
     display: flex;
     flex-direction:column;
     align-items: center;
     justify-content: space-evenly;
+    background-image: url("../img/home.jpg")
 }
 .cartelCallofGeeks{
     background-color: transparent;
     height: 10em;
     width: 40em;
-    border-color: black;
+    color: white;
+    border-color: white;
     border-width: 2px;
     border-style: solid;
     border-radius: 50em 50em 50em 50em;
@@ -31,12 +29,12 @@ img{
     justify-content: center;
     align-items: center;
 }
-
 .cartelJugar{
     background-color: transparent;
+    color: white;
     height: 5em;
     width: 20em;
-    border-color: black;
+    border-color: white;
     border-width: 2px;
     border-style: solid;
     border-radius: 50em 50em 50em 50em;
@@ -45,25 +43,24 @@ img{
     align-items: center;
 }
 
-
-
 .desingScreen2{
-    background-color: salmon;
     height: 100vh;
     width: 100vw;
+    background-image: url("../img/P2\,3.jpg");
 }
+
 .desingScreen3{
-    background-color: coral;
+    background-image: url("../img/P2\,3.jpg");
     height: 100vh;
     width: 100vw;
 }
 .desingScreen4{
-    background-color: gold;
+    background-image: url("../img/P4.jpg");
     height: 100vh;
     width: 100vw;
 }
 .desingScreen5{
-
+    background-image: url("../img/GAMEOVER.jpg");
     height: 100vh;
     width: 100vw;
 }
