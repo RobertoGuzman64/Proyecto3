@@ -61,8 +61,12 @@
     <section id="screen4" style="display:none" onclick="cambiaPantalla(5)">
         <div class="desingScreen4">
             <div class="soldadosBatalla">
-                <div class="soldado1"></div>
-                <div class="soldado2"></div>
+                <div class="soldadoBatalla1"></div>
+                <div class="soldadoBatalla2"></div>
+            </div>
+            <div class="estadisticasBatalla">
+                <div class="estadistica1"></div>
+                <div class="estadistica2"></div>
             </div>
             <div class="botonJugar">
                 <h1>BATALLA</h1>
@@ -70,12 +74,19 @@
         </div>
     </section>
 
-    <section id="screen5" style="display:none"onclick="cambiaPantalla(1)">
+    <section id="screen5" style="display:none">
         <div class="desingScreen5">
+            <div class="ganador"></div>
+            <div class="cartelGanador">
+                <h1>A GANADO</h1>
+            </div>
+            <div class="botonReiniciar" onclick="cambiaPantalla(1)">
+                <h1>VOLVER A JUGAR</h1>
+            </div>
         </div>
     </section>
 
-    <script src="js/coches.js"></script>
+    <script src="js/soldados.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
