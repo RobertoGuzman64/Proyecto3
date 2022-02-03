@@ -58,50 +58,52 @@ body {
     align-items: center;
     justify-content: center;
 }
+.soldaditoimg{
+    height: 100%;
+    width: 100%;
+}
 .soldado1{
-    background-image: url("../img/soldado1.jfif");
-    background-size: contain;
-    background-repeat:no-repeat;
     height: 25em;
     width: 15em;
     margin-right: 3em;
 }
+
 .soldado2{
-    background-image: url("../img/soldado2.jfif");
-    background-size: contain;
+    background-size: cover;
+    background-position: center;
     background-repeat:no-repeat;
     height: 25em;
     width: 15em;
     margin-right: 3em;
 }
 .soldado3{
-    background-image: url("../img/soldado3.jpg");
-    background-size: contain;
+    background-position: center;
+    background-size: cover;
     background-repeat:no-repeat;
     height: 25em;
     width: 15em;
     margin-right: 3em;
 }
 .soldado4{
-    background-image: url("../img/soldado4.png");
-    background-size: contain;
+    background-size: cover;
     background-repeat:no-repeat;
+    background-position: center;
     height: 25em;
     width: 15em;
     margin-right: 3em;
 }
 .soldado5{
-    background-image: url("../img/soldado5.jpg");
-    background-size: contain;
+    background-size: cover;
     background-repeat:no-repeat;
+    background-position: center;
     height: 25em;
     width: 15em;
     margin-right: 3em;
 }
 .soldado6{
-    background-image: url("../img/soldado6.jpg");
-    background-size: contain;
+    background-size: cover;
     background-repeat:no-repeat;
+    background-position: center;
     height: 25em;
     width: 15em;
 }
@@ -120,38 +122,8 @@ body {
     margin-block-end: 5em;
 }
 /* PANTALLA 3 */
+
 .desingScreen3{
-    background-image: url("../img/P2\,3.jpg");
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    flex-direction:column;
-    align-items: center;
-    justify-content: space-evenly;
-}
-.soldados2{
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.cartelSeleccionar2{
-    background-color: transparent;
-    color: white;
-    height: 10em;
-    width: 25em;
-    border-color: white;
-    border-width: 2px;
-    border-style: solid;
-    border-radius: 50em 50em 50em 50em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-block-end: 5em;
-}
-/* PANTALLA 4 */
-.desingScreen4{
     background-image: url("../img/P4.jpg");
     height: 100vh;
     width: 100vw;
@@ -166,6 +138,8 @@ body {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    margin-top: 5em;
+    margin-left: 3.5em;
 }
 .estadisticasBatalla{
     height: 100vh;
@@ -175,16 +149,16 @@ body {
     align-items: center;
 }
 .soldadoBatalla1{
-    background-image: url("../img/soldado3.jpg");
-    background-size: contain;
+    /* background-size: cover;
     background-repeat:no-repeat;
+    background-position: center; */
     height: 25em;
     width: 15em;
 }
 .estadistica1{
     background-color: transparent;
     color: white;
-    height: 5em;
+    height: 8em;
     width: 15em;
     border-color: white;
     border-width: 2px;
@@ -196,16 +170,16 @@ body {
     margin-block-end: 5em;
 }
 .soldadoBatalla2{
-    background-image: url("../img/soldado3.jpg");
-    background-size: contain;
+    /* background-size: cover;
     background-repeat:no-repeat;
+    background-position: center; */
     height: 25em;
     width: 15em;
 }
 .estadistica2{
     background-color: transparent;
     color: white;
-    height: 5em;
+    height: 8em;
     width: 15em;
     border-color: white;
     border-width: 2px;
@@ -230,8 +204,8 @@ body {
     align-items: center;
     margin-block-end: 5em;
 }
-/* PANTALLA 5 */
-.desingScreen5{
+/* PANTALLA 4 */
+.desingScreen4{
     height: 100vh;
     width: 100vw;
     display: flex;
@@ -241,8 +215,7 @@ body {
     background-image: url("../img/GAMEOVER.jpg")
 }
 .ganador{
-    background-image: url("../img/soldado3.jpg");
-    background-size: contain;
+    background-size: cover;
     background-repeat:no-repeat;
     height: 25em;
     width: 15em;

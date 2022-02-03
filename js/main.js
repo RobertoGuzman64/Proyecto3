@@ -2,7 +2,7 @@
 const cambiaPantalla = (siguiente) => {
     let pantallaDeseada = "screen" + siguiente;
 
-    let arrayPantallas = ["screen1","screen2","screen3","screen4","screen5"];
+    let arrayPantallas = ["screen1","screen2","screen3","screen4"];
 
     arrayPantallas = arrayPantallas.filter(Valor => !pantallaDeseada.includes(Valor));
 

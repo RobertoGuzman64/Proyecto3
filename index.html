@@ -10,8 +10,6 @@
 <body>
 
     <!-- PANTALLAS DEL JUEGO -->
-
-
     <section id="screen1">
         <div class="desingScreen1">
         <!-- <div class="desingScreen1" id="home"> -->
@@ -28,45 +26,48 @@
     <section id="screen2" style="display:none" onclick="cambiaPantalla(3)">
     <div class="desingScreen2">
         <div class="soldados">
-            <div class="soldado1"></div>
-            <div class="soldado2"></div>
-            <div class="soldado3"></div>
-            <div class="soldado4"></div>
-            <div class="soldado5"></div>
-            <div class="soldado6"></div>
+            <div class="soldado1">
+                <img class="soldaditoimg" src="img/soldado1.jpg"alt ="">
+            </div>
+            <div class="soldado2">
+                <img class="soldaditoimg" src="img/soldado2.jpg"alt ="">
+            </div>
+            <div class="soldado3">
+                <img class="soldaditoimg" src="img/soldado3.jpg"alt ="">
+            </div>
+            <div class="soldado4">
+                <img class="soldaditoimg" src="img/soldado4.png"alt ="">
+            </div>
+            <div class="soldado5">
+                <img class="soldaditoimg" src="img/soldado5.jpg"alt ="">
+            </div>
+            <div class="soldado6">
+                <img class="soldaditoimg" src="img/soldado6.jpg"alt ="">
+            </div>
         </div>
         <div class="cartelSeleccionar">
             <h1>Jugador 1 Selecciona un Soldado</h1>
         </div>
     </div>
     </section>
-
     
     <section id="screen3" style="display:none" onclick="cambiaPantalla(4)">
-    <div class="desingScreen3">
-        <div class="soldados2">
-            <div class="soldado1"></div>
-            <div class="soldado2"></div>
-            <div class="soldado3"></div>
-            <div class="soldado4"></div>
-            <div class="soldado5"></div>
-            <div class="soldado6"></div>
-        </div>
-        <div class="cartelSeleccionar2">
-            <h1>Jugador 2 Selecciona un Soldado</h1>
-        </div>
-    </div>
-    </section>
-    
-    <section id="screen4" style="display:none" onclick="cambiaPantalla(5)">
-        <div class="desingScreen4">
+        <div class="desingScreen3">
             <div class="soldadosBatalla">
-                <div class="soldadoBatalla1"></div>
-                <div class="soldadoBatalla2"></div>
+                <div class="soldado1">
+                    <img class="soldaditoimg" src="img/soldado5.jpg">
+                </div>
+                <div class="soldado1">
+                    <img class="soldaditoimg" src="img/soldado3.jpg">
+                </div>
             </div>
             <div class="estadisticasBatalla">
-                <div class="estadistica1"></div>
-                <div class="estadistica2"></div>
+                <div class="estadistica1">
+                    <h1>VIDA</h1>
+                </div>
+                <div class="estadistica2">
+                    <h1>VIDA</h1>
+                </div>
             </div>
             <div class="botonJugar">
                 <h1>BATALLA</h1>
@@ -74,11 +75,13 @@
         </div>
     </section>
 
-    <section id="screen5" style="display:none">
-        <div class="desingScreen5">
-            <div class="ganador"></div>
+    <section id="screen4" style="display:none">
+        <div class="desingScreen4">
+            <div class="ganador">
+                <img class="soldaditoimg" src="img/soldado3.jpg">
+            </div>
             <div class="cartelGanador">
-                <h1>A GANADO</h1>
+                <h1>GANADOR</h1>
             </div>
             <div class="botonReiniciar" onclick="cambiaPantalla(1)">
                 <h1>VOLVER A JUGAR</h1>
