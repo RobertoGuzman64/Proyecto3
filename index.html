@@ -22,35 +22,50 @@
         </div>
     </section>
     
+    <!-- onclick="cambiaPantalla(3)" -->
 
-    <section id="screen2" style="display:none" onclick="cambiaPantalla(3)">
+
+    <section id="screen2" style="display:none" >
     <div class="desingScreen2">
         <div class="soldados">
             <div class="soldado1">
-                <img class="soldaditoimg" src="img/soldado1.jpg"alt ="">
+                <img id=1 class="soldaditoimg" src="img/soldado1.jpg" onclick="seleccionarSoldado(1)">
             </div>
             <div class="soldado2">
-                <img class="soldaditoimg" src="img/soldado2.jpg"alt ="">
+                <img id=2 class="soldaditoimg" src="img/soldado2.jpg" onclick="seleccionarSoldado(2)">
             </div>
             <div class="soldado3">
-                <img class="soldaditoimg" src="img/soldado3.jpg"alt ="">
+                <img id=3 class="soldaditoimg" src="img/soldado3.jpg" onclick="seleccionarSoldado(3)">
             </div>
             <div class="soldado4">
-                <img class="soldaditoimg" src="img/soldado4.png"alt ="">
+                <img id=4 class="soldaditoimg" src="img/soldado4.png" onclick="seleccionarSoldado(4)">
             </div>
             <div class="soldado5">
-                <img class="soldaditoimg" src="img/soldado5.jpg"alt ="">
+                <img id=5 class="soldaditoimg" src="img/soldado5.jpg" onclick="seleccionarSoldado(5)">
             </div>
             <div class="soldado6">
-                <img class="soldaditoimg" src="img/soldado6.jpg"alt ="">
+                <img id=6 class="soldaditoimg" src="img/soldado6.jpg" onclick="seleccionarSoldado(6)">
+            </div>
+            <div class="soldadoSeleccionado">
+                <div id="data1" class="dataSoldado">
+                </div>
+                <div id="data2" class="dataSoldado">
+                </div>
             </div>
         </div>
         <div class="cartelSeleccionar">
-            <h1>Jugador 1 Selecciona un Soldado</h1>
+            <h1>Selecciona dos Soldados</h1>
         </div>
     </div>
     </section>
     
+
+
+
+
+
+
+
     <section id="screen3" style="display:none" onclick="cambiaPantalla(4)">
         <div class="desingScreen3">
             <div class="soldadosBatalla">

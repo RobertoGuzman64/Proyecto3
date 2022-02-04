@@ -139,6 +139,13 @@ body {
     align-items: center;
     margin-block-end: 5em;
 }
+.seleccionarSoldado{
+    -webkit-filter: grayscale(100%);
+    filter:grayscale(100%)
+}
+.dataSoldado {
+    font-size: 3em;
+}
 /* PANTALLA 3 */
 
 .desingScreen3{
