@@ -13,7 +13,7 @@ const cambiaPantalla = (siguiente) => {
 
 
 
-const selectSoldado = (nSoldado) => {
+const seleccionarSoldado = (nSoldado) => {
     
     if(equipo1 == ""){
         equipo1 = todosSoldados[nSoldado];

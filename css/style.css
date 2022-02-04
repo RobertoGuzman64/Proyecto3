@@ -39,7 +39,7 @@ body {
     background-color: transparent;
     color: white;
     height: 5em;
-    width: 20em;
+    width: 15em;
     border-color: white;
     border-width: 2px;
     border-style: solid;
@@ -142,7 +142,7 @@ body {
 .cartelSeleccionar{
     background-color: transparent;
     color: white;
-    height: 10em;
+    height: 5em;
     width: 35em;
     border-color: white;
     border-width: 2px;
@@ -153,18 +153,23 @@ body {
     align-items: center;
     margin-block-end: 15em;
 }
+
 .letrasSeleccionar{
-    margin-left: 0.5em;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 45px;
+    font-size: 40px;
+    font-family: monospace;
 }
-.seleccionarSoldado{
+
+
+.soldadoSeleccionado{
     -webkit-filter: grayscale(100%);
     filter:grayscale(100%)
 }
 .dataSoldado {
     font-size: 3em;
 }
+
+
+
 /* PANTALLA 3 */
 
 .desingScreen3{
@@ -184,7 +189,7 @@ body {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    margin-top: 5em;
+    margin-top: 10em;
     margin-left: 3.5em;
 }
 .estadisticasBatalla{
@@ -204,12 +209,12 @@ body {
 .estadistica1{
     background-color: transparent;
     color: white;
-    height: 8em;
+    height: 10em;
     width: 15em;
     border-color: white;
     border-width: 2px;
     border-style: solid;
-    border-radius: 25em 25em 25em 25em;
+    border-radius: 20px 20px 20px 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -225,12 +230,12 @@ body {
 .estadistica2{
     background-color: transparent;
     color: white;
-    height: 8em;
+    height: 10em;
     width: 15em;
     border-color: white;
     border-width: 2px;
     border-style: solid;
-    border-radius: 50em 50em 50em 50em;
+    border-radius: 20px 20px 20px 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -248,7 +253,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-block-end: 5em;
+    margin-block-end: 10em;
 }
 /* PANTALLA 4 */
 .desingScreen4{
@@ -270,12 +275,27 @@ body {
     border-color: red;
     border-width: 4px;
     border-style: solid;
+    margin-top: 5em;
+}
+.estadisticaGanador{
+    background-color: transparent;
+    color: white;
+    height: 10em;
+    width: 15em;
+    border-color: white;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 20px 20px 20px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-block-end: 5em;
 }
 .cartelGanador{
     background-color: transparent;
     color: white;
     height: 5em;
-    width: 15em;
+    width: 20em;
     border-color: white;
     border-width: 2px;
     border-style: solid;
@@ -289,7 +309,7 @@ body {
     background-color: transparent;
     color: white;
     height: 5em;
-    width: 20em;
+    width: 25em;
     border-color: white;
     border-width: 2px;
     border-style: solid;
@@ -297,4 +317,5 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-block-end: 10em;
 }
