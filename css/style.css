@@ -71,6 +71,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 10em;
 }
 .soldaditoimg{
     height: 100%;
@@ -153,13 +154,107 @@ body {
     align-items: center;
     margin-block-end: 15em;
 }
-
 .letrasSeleccionar{
     font-size: 40px;
     font-family: monospace;
 }
-
-
+.nombres{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 2em;
+    margin-block-end: 5em;
+}
+.nombre1{
+    background-color: transparent;
+    color: white;
+    height: 10em;
+    width: 15em;
+    border-color: white;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 20px 20px 20px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-block-end: 5em;
+    margin-right: 3em;
+}
+.nombre2{
+    background-color: transparent;
+    color: white;
+    height: 10em;
+    width: 15em;
+    border-color: white;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 20px 20px 20px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-block-end: 5em;
+    margin-right: 3em;
+}
+.nombre3{
+    background-color: transparent;
+    color: white;
+    height: 10em;
+    width: 15em;
+    border-color: white;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 20px 20px 20px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-block-end: 5em;
+    margin-right: 3em;
+}
+.nombre4{
+    background-color: transparent;
+    color: white;
+    height: 10em;
+    width: 15em;
+    border-color: white;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 20px 20px 20px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-block-end: 5em;
+    margin-right: 3em;
+}
+.nombre5{
+    background-color: transparent;
+    color: white;
+    height: 10em;
+    width: 15em;
+    border-color: white;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 20px 20px 20px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-block-end: 5em;
+    margin-right: 3em;
+}
+.nombre6{
+    background-color: transparent;
+    color: white;
+    height: 10em;
+    width: 15em;
+    border-color: white;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 20px 20px 20px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-block-end: 5em;
+    margin-right: 3em;
+}
 .soldadoSeleccionado{
     -webkit-filter: grayscale(100%);
     filter:grayscale(100%)
