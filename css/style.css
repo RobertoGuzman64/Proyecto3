@@ -9,11 +9,14 @@ body {
 .desingScreen1{
     height: 100vh;
     width: 100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     flex-direction:column;
     align-items: center;
     justify-content: space-evenly;
     background-image: url("../img/home.jpg")
+    
 }
 .cartelCallofGeeks{
     background-color: transparent;
@@ -28,6 +31,10 @@ body {
     justify-content: center;
     align-items: center;
 }
+.letrasCartel{
+    font-family: fantasy;
+    font-size: 100px;
+}
 .cartelJugar{
     background-color: transparent;
     color: white;
@@ -40,11 +47,18 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 10em;
+}
+.letrasJugar{
+    font-family: monospace;
+    font-size: 40px;
 }
 /* PANTALLA 2 */
 .desingScreen2{
     height: 100vh;
     width: 100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     flex-direction:column;
     align-items: center;
@@ -129,7 +143,7 @@ body {
     background-color: transparent;
     color: white;
     height: 10em;
-    width: 25em;
+    width: 35em;
     border-color: white;
     border-width: 2px;
     border-style: solid;
@@ -137,7 +151,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-block-end: 5em;
+    margin-block-end: 15em;
+}
+.letrasSeleccionar{
+    margin-left: 0.5em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 45px;
 }
 .seleccionarSoldado{
     -webkit-filter: grayscale(100%);
@@ -149,6 +168,8 @@ body {
 /* PANTALLA 3 */
 
 .desingScreen3{
+    background-repeat: no-repeat;
+    background-size: cover;
     background-image: url("../img/P4.jpg");
     height: 100vh;
     width: 100vw;
@@ -233,6 +254,8 @@ body {
 .desingScreen4{
     height: 100vh;
     width: 100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     flex-direction:column;
     align-items: center;
