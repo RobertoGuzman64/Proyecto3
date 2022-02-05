@@ -162,21 +162,23 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: 2em;
+    margin-left: 3em;
     margin-block-end: 5em;
+}
+.letrasNombres{
+    font-size: 18px;
+    font-family: monospace;
 }
 .nombre1{
     background-color: transparent;
     color: white;
     height: 10em;
     width: 15em;
-    border-color: white;
-    border-width: 2px;
+    border-color:red;
+    border-width: 4px;
     border-style: solid;
     border-radius: 20px 20px 20px 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    text-align-last: center;
     margin-block-end: 5em;
     margin-right: 3em;
 }
@@ -185,13 +187,11 @@ body {
     color: white;
     height: 10em;
     width: 15em;
-    border-color: white;
-    border-width: 2px;
+    border-color: red;
+    border-width: 4px;
     border-style: solid;
     border-radius: 20px 20px 20px 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    text-align-last: center;
     margin-block-end: 5em;
     margin-right: 3em;
 }
@@ -200,13 +200,11 @@ body {
     color: white;
     height: 10em;
     width: 15em;
-    border-color: white;
-    border-width: 2px;
+    border-color: red;
+    border-width: 4px;
     border-style: solid;
     border-radius: 20px 20px 20px 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    text-align-last: center;
     margin-block-end: 5em;
     margin-right: 3em;
 }
@@ -215,13 +213,11 @@ body {
     color: white;
     height: 10em;
     width: 15em;
-    border-color: white;
-    border-width: 2px;
+    border-color: red;
+    border-width: 4px;
     border-style: solid;
     border-radius: 20px 20px 20px 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    text-align-last: center;
     margin-block-end: 5em;
     margin-right: 3em;
 }
@@ -230,13 +226,11 @@ body {
     color: white;
     height: 10em;
     width: 15em;
-    border-color: white;
-    border-width: 2px;
+    border-color: red;
+    border-width: 4px;
     border-style: solid;
     border-radius: 20px 20px 20px 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    text-align-last: center;
     margin-block-end: 5em;
     margin-right: 3em;
 }
@@ -245,13 +239,11 @@ body {
     color: white;
     height: 10em;
     width: 15em;
-    border-color: white;
-    border-width: 2px;
+    border-color: red;
+    border-width: 4px;
     border-style: solid;
     border-radius: 20px 20px 20px 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    text-align-last: center;
     margin-block-end: 5em;
     margin-right: 3em;
 }
