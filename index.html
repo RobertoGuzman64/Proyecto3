@@ -9,7 +9,7 @@
 </head>
 <body>
 
-    <!-- PANTALLAS DEL JUEGO -->
+    <!-- PANTALLAS 1 DEL JUEGO -->
     <section id="screen1">
         <div class="desingScreen1">
         <!-- <div class="desingScreen1" id="home"> -->
@@ -22,16 +22,14 @@
         </div>
     </section>
     
+    <!-- PANTALLA 2 DEL JUEGO -->
     <!-- onclick="cambiaPantalla(3)" -->
-
-
     <section id="screen2" style="display:none">
     <div class="desingScreen2">
         <div class="soldados">
             <div class="soldado1">
                 <img id=1 class="soldaditoimg" src="img/soldado1.jpg" onclick="seleccionarSoldado(1)">
             </div>
-
             <div class="soldado2">
                 <img id=2 class="soldaditoimg" src="img/soldado2.jpg" onclick="seleccionarSoldado(2)">
             </div>
@@ -100,21 +98,26 @@
     
 
 
+<!-- PANTALLA 3 DEL JUEGO -->
+<!-- onclick="cambiaPantalla(4)" -->
 
-
-
-
-
-    <section id="screen3" style="display:none" onclick="cambiaPantalla(4)">
+    <section id="screen3" style="display:none" >
         <div class="desingScreen3">
+
+
             <div class="soldadosBatalla">
-                <div class="soldado1">
-                    <img class="soldaditoimg" src="img/soldado5.jpg">
+
+                <div class="soldadoBatalla1">
+                    <div id="verSoldado1" class="muestraSoldado"></div>
+
                 </div>
-                <div class="soldado1">
-                    <img class="soldaditoimg" src="img/soldado3.jpg">
+                <div class="soldadoBatalla2">
+                    <div id="verSoldado2" class="muestraSoldado"></div>
+
                 </div>
             </div>
+
+
             <div class="estadisticasBatalla">
                 <div class="estadistica1">
                     <h1>VIDA</h1>
