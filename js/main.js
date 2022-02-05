@@ -35,7 +35,7 @@ const seleccionarSoldado = (nSoldado) => {
         soldadoSegundo.onclick = "";
         soldadoSegundo.classList.add("soldadoSeleccionado");
         
-        //una vez he escogido los dos coches.........
+        //una vez he escogido los dos soldados.........
 
         setTimeout(()=>{
             cambiaPantalla(3);

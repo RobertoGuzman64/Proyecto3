@@ -340,6 +340,10 @@ body {
     align-items: center;
     margin-block-end: 5em;
 }
+.rayGuns{
+    height: 7em;
+    width: 7em;
+}
 .botonJugar{
     background-color: transparent;
     color: white;
