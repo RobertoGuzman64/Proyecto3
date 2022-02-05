@@ -358,6 +358,8 @@ body {
     align-items: center;
     margin-block-end: 10em;
 }
+
+
 /* PANTALLA 4 */
 .desingScreen4{
     height: 100vh;
@@ -370,7 +372,7 @@ body {
     justify-content: space-evenly;
     background-image: url("../img/GAMEOVER.jpg")
 }
-.ganador{
+.bordeGanador{
     background-size: cover;
     background-repeat:no-repeat;
     height: 25em;
@@ -379,6 +381,14 @@ body {
     border-width: 4px;
     border-style: solid;
     margin-top: 5em;
+}
+.ganador{
+    height: 100%;
+    width: 100%;
+}
+.winner{
+    height: 100%;
+    width: 100%;
 }
 .estadisticaGanador{
     background-color: transparent;
@@ -420,5 +430,5 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-block-end: 10em;
+    margin-block-end: 5em;
 }
