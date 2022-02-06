@@ -113,19 +113,15 @@
             </div>
             <div class="estadisticasBatalla">
                 <div class="estadistica1">
-
                     
                     <div id="est1" class="estSoldado"></div>
                     <div id="vida1"></div>
 
-
                 </div>
                 <div class="estadistica2">
 
-
                     <div id="est2" class="estSoldado"></div>
                     <div id="vida2"></div>
-
 
                 </div>
             </div>
@@ -151,15 +147,18 @@
             <div class="bordeGanador">
                 <div id="winner" class="ganador"></div>
             </div>
-            <div class="estadisticaGanador"></div>
+            <div id="estGanador" class="estadisticaGanador"></div>
             <div class="cartelGanador">
                 <h1 class="letrasJugar">¡¡ A GANADO !!</h1>
             </div>
-            <div class="botonReiniciar" onclick="cambiaPantalla(1)">
+            <div id="volver" style.display = "none" class="botonReiniciar" onclick="resetearJuego()">
                 <h1 class="letrasJugar">VOLVER A JUGAR</h1>
             </div>
         </div>
     </section>
+
+
+    <!-- onclick="cambiaPantalla(1)" -->
 
     <script src="js/soldados.js"></script>
     <script src="js/main.js"></script>

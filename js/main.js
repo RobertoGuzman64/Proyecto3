@@ -19,7 +19,7 @@ const seleccionarSoldado = (nSoldado) => {
     if(equipo1 == ""){
         equipo1 = todosSoldados[nSoldado];
         let soldadoPrimero = document.getElementById(nSoldado);
-        let datosSoldado = document.getElementById("data"+ 1);
+        // let datosSoldado = document.getElementById("data"+ 1);
         //una vez he escogido el soldado, invalido el img para que nadie haga onclick sobre él
         soldadoPrimero.onclick = "";
         soldadoPrimero.classList.add("soldadoSeleccionado");
@@ -44,7 +44,7 @@ const seleccionarSoldado = (nSoldado) => {
 
 
 const verJuego = () => {
-    console.log(equipo1,equipo2,"el ganador es....",ganador);
+    // console.log(equipo1,equipo2,"el ganador es....",ganador);
     verEquipo1.innerHTML = `<img class="foto" style="width:15em;height:25em" src="img/${equipo1.fotoSoldado}.jpg" alt="primer_soldado"/>`;
     estEquipo1.innerHTML = `<div>NOMBRE${equipo1.nombre}<br>EDAD${equipo1.edad}<br>ATAQUE${equipo1.ataque}<br>DEFENSA${equipo1.defensa}<br>${equipo1.vida}</div>`;
     verEquipo2.innerHTML = `<img class="foto" style="width:15;height:25em" src="img/${equipo2.fotoSoldado}.jpg" alt"segundo_soldado"/>`;
@@ -63,8 +63,8 @@ const jugar = () => {
 
         cambiaPantalla(4);
 
-        winner.innerHTML = `${equipo1.fotoSoldado}`;
-
+        winner.innerHTML = `<img class="foto" style="width:15;height:25em" src="img/${equipo1.fotoSoldado}.jpg" alt"primer_soldado"/>`;
+        estGanador.innerHTML = `<div>NOMBRE${equipo1.nombre}<br>EDAD${equipo1.edad}<br>ATAQUE${equipo1.ataque}<br>DEFENSA${equipo1.defensa}`;
     }
 
     equipo1.atacar();
@@ -82,14 +82,6 @@ const jugar = () => {
 
 
 
-
-
-
-
-
-
-
-
 let verEquipo1 = document.getElementById("verSoldado1");
 let verEquipo2 = document.getElementById("verSoldado2");
 let estEquipo1 = document.getElementById("est1");
@@ -97,3 +89,15 @@ let estEquipo2 = document.getElementById("est2");
 let vidaEquipo1 = document.getElementById("vida1");
 let vidaEquipo2 = document.getElementById("vida2");
 let winner = document.getElementById("winner");
+
+
+
+
+function resetearJuego(){
+    equipo1 = "";
+    equipo2 = "";
+    ganador = "";
+    cambiaPantalla(1);
+    document.getElementById("volver").style.display = "none";
+}
+
