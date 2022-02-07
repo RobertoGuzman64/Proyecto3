@@ -19,14 +19,9 @@ const seleccionarSoldado = (nSoldado) => {
     if(equipo1 == ""){
         equipo1 = todosSoldados[nSoldado];
         let soldadoPrimero = document.getElementById(nSoldado);
-        // let datosSoldado = document.getElementById("data"+ 1);
         //una vez he escogido el soldado, invalido el img para que nadie haga onclick sobre él
         soldadoPrimero.onclick = "";
         soldadoPrimero.classList.add("soldadoSeleccionado");
-
-        // datosSoldado.innerHTML = `${equipo1.fotoSoldado}`;
-
-
     } else if (equipo2 == ""){
         equipo2 = todosSoldados[nSoldado];
         let soldadoSegundo = document.getElementById(nSoldado);
@@ -53,18 +48,19 @@ const verJuego = () => {
 
 
 
-
-
-
 const jugar = () => {
-    if((equipo1.vida >= vida_soldado) || (equipo2.vida >= vida_soldado)){
-
-        ganador = equipo1;
-
+    if(equipo1.vida >= vida_soldado){
+        
         cambiaPantalla(4);
 
         winner.innerHTML = `<img class="foto" style="width:15;height:25em" src="img/${equipo1.fotoSoldado}.jpg" alt"primer_soldado"/>`;
         estGanador.innerHTML = `<div>NOMBRE${equipo1.nombre}<br>EDAD${equipo1.edad}<br>ATAQUE${equipo1.ataque}<br>DEFENSA${equipo1.defensa}`;
+
+    }else if(equipo2.vida >= vida_soldado){
+
+
+        winner2.innerHTML = `<img class="foto" style="width:15;height:25em" src="img/${equipo2.fotoSoldado}.jpg" alt"primer_soldado"/>`;
+        estGanador2.innerHTML = `<div>NOMBRE${equipo2.nombre}<br>EDAD${equipo2.edad}<br>ATAQUE${equipo2.ataque}<br>DEFENSA${equipo2.defensa}`;
     }
 
     equipo1.atacar();
@@ -76,6 +72,11 @@ const jugar = () => {
 
 }
 
+
+// FUNCION RANDOM
+// function getRandomInt(min, max) {
+//     return Math.floor(Math.random() * (max - min)) + min;
+//   }
 
 
 
@@ -89,15 +90,16 @@ let estEquipo2 = document.getElementById("est2");
 let vidaEquipo1 = document.getElementById("vida1");
 let vidaEquipo2 = document.getElementById("vida2");
 let winner = document.getElementById("winner");
+let winner2 = document.getElementById("winner");
 
 
 
 
-function resetearJuego(){
-    equipo1 = "";
-    equipo2 = "";
-    ganador = "";
-    cambiaPantalla(1);
-    document.getElementById("volver").style.display = "none";
-}
+// function resetearJuego(){
+//     equipo1 = "";
+//     equipo2 = "";
+//     ganador = "";
+//     cambiaPantalla(1);
+//     document.getElementById("volver").style.display = "none";
+// }
 

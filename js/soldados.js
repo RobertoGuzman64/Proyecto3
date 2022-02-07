@@ -37,4 +37,4 @@ let equipo1 = "";
 let equipo2 = "";
 
 let ganador = "";
-let vida_soldado = 500;
+let vida_soldado = 1000;
