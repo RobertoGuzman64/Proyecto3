@@ -70,8 +70,6 @@ const jugar = () => {
 }
 
 
-
-
 let verEquipo1 = document.getElementById("verSoldado1");
 let verEquipo2 = document.getElementById("verSoldado2");
 let estEquipo1 = document.getElementById("est1");
@@ -81,18 +79,8 @@ let vidaEquipo2 = document.getElementById("vida2");
 let winner = document.getElementById("winner");
 
 
-
-
-
 function resetearJuego(){
-    verEquipo1 = "";
-    verEquipo2 = "";
-    estEquipo1 = "";
-    estEquipo2 = "";
-    vidaEquipo1 = "";
-    vidaEquipo2 = "";
-    winner = "";
-
     cambiaPantalla(1);
-    document.getElementById("volver").style.display = "none";
+    location.reload();
+    document.getElementById("volver");
 }
