@@ -12,15 +12,18 @@ class Soldado {
     atacar(){
         return this.vida -= Math.floor(Math.random() * 20);
     }
+    defender(){
+        return this.vida += Math.floor(Math.random() * 5);
+    }
 }
 
 
-let soldado1 = new Soldado ("Cabo", 40, 150,100,"soldado1")
-let soldado2 = new Soldado ("Sargento", 50, 151, 100,"soldado2")
-let soldado3 = new Soldado ("Comandante", 45, 149, 100,"soldado3")
-let soldado4 = new Soldado ("Coronel", 42, 145, 100,"soldado4")
-let soldado5 = new Soldado ("Teniente", 47, 153, 100,"soldado5")
-let soldado6 = new Soldado ("Zombie", 105, 148, 100,"soldado6")
+let soldado1 = new Soldado (" Cabo ", 40, 150,100,"soldado1")
+let soldado2 = new Soldado (" Sargento ", 50, 151, 100,"soldado2")
+let soldado3 = new Soldado (" Comandante ", 45, 149, 100,"soldado3")
+let soldado4 = new Soldado (" Coronel ", 42, 145, 100,"soldado4")
+let soldado5 = new Soldado (" Teniente ", 47, 153, 100,"soldado5")
+let soldado6 = new Soldado (" Zombie ", 105, 148, 100,"soldado6")
 
 let todosSoldados = {
     1 : soldado1,
