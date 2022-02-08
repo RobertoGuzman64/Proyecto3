@@ -7,15 +7,13 @@ class Soldado {
         this.ataque = ataque;
         this.defensa = defensa;
         this.fotoSoldado = fotoSoldado;
-        this.vida = 0;
+        this.vida = 200;
     }
     atacar(){
-        return this.vida += 100;
-    }
-    defender(){
-        return this.ataque - 5;
+        return this.vida -= Math.floor(Math.random() * 20);
     }
 }
+
 
 let soldado1 = new Soldado ("Cabo", 40, 150,100,"soldado1")
 let soldado2 = new Soldado ("Sargento", 50, 151, 100,"soldado2")
@@ -37,4 +35,4 @@ let equipo1 = "";
 let equipo2 = "";
 
 let ganador = "";
-let vida_soldado = 1000;
+let vida_soldado = 20;

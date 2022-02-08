@@ -39,7 +39,6 @@ const seleccionarSoldado = (nSoldado) => {
 
 
 const verJuego = () => {
-    // console.log(equipo1,equipo2,"el ganador es....",ganador);
     verEquipo1.innerHTML = `<img class="foto" style="width:15em;height:25em" src="img/${equipo1.fotoSoldado}.jpg" alt="primer_soldado"/>`;
     estEquipo1.innerHTML = `<div>NOMBRE${equipo1.nombre}<br>EDAD${equipo1.edad}<br>ATAQUE${equipo1.ataque}<br>DEFENSA${equipo1.defensa}<br>${equipo1.vida}</div>`;
     verEquipo2.innerHTML = `<img class="foto" style="width:15;height:25em" src="img/${equipo2.fotoSoldado}.jpg" alt"segundo_soldado"/>`;
@@ -49,36 +48,23 @@ const verJuego = () => {
 
 
 const jugar = () => {
-    if(equipo1.vida >= vida_soldado){
-        
+    
+    if(equipo1.vida <= vida_soldado){
         cambiaPantalla(4);
-
         winner.innerHTML = `<img class="foto" style="width:15;height:25em" src="img/${equipo1.fotoSoldado}.jpg" alt"primer_soldado"/>`;
         estGanador.innerHTML = `<div>NOMBRE${equipo1.nombre}<br>EDAD${equipo1.edad}<br>ATAQUE${equipo1.ataque}<br>DEFENSA${equipo1.defensa}`;
-
-    }else if(equipo2.vida >= vida_soldado){
-
-
-        winner2.innerHTML = `<img class="foto" style="width:15;height:25em" src="img/${equipo2.fotoSoldado}.jpg" alt"primer_soldado"/>`;
-        estGanador2.innerHTML = `<div>NOMBRE${equipo2.nombre}<br>EDAD${equipo2.edad}<br>ATAQUE${equipo2.ataque}<br>DEFENSA${equipo2.defensa}`;
     }
-
+    if(equipo2.vida <= vida_soldado){
+        cambiaPantalla(4);
+        winner.innerHTML = `<img class="foto" style="width:15;height:25em" src="img/${equipo2.fotoSoldado}.jpg" alt"primer_soldado"/>`;
+        estGanador.innerHTML = `<div>NOMBRE${equipo2.nombre}<br>EDAD${equipo2.edad}<br>ATAQUE${equipo2.ataque}<br>DEFENSA${equipo2.defensa}`;
+    }
     equipo1.atacar();
-
     equipo2.atacar();
-
+    
     console.log(vida1.innerHTML = `<p>${equipo1.vida}</p>`);
     console.log(vida2.innerHTML = `<p>${equipo2.vida}</p>`);
-
 }
-
-
-// FUNCION RANDOM
-// function getRandomInt(min, max) {
-//     return Math.floor(Math.random() * (max - min)) + min;
-//   }
-
-
 
 
 
@@ -90,7 +76,7 @@ let estEquipo2 = document.getElementById("est2");
 let vidaEquipo1 = document.getElementById("vida1");
 let vidaEquipo2 = document.getElementById("vida2");
 let winner = document.getElementById("winner");
-let winner2 = document.getElementById("winner");
+
 
 
 
