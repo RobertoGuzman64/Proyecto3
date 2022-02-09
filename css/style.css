@@ -115,6 +115,7 @@ body {
 .letrasJugar{
     font-family: monospace;
     font-size: 40px;
+    user-select: none;
 }
 
 /* PANTALLA 2 */
@@ -338,8 +339,7 @@ body {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    margin-top: 10em;
-    
+    margin-top: 2em;
 }
 .muestraSoldado{
     display: flex;
@@ -423,7 +423,7 @@ body {
     height: 7em;
     width: 7em;
 }
-.botonJugar{
+/* .botonJugar{boton original
     background-color: transparent;
     color: white;
     height: 10em;
@@ -436,6 +436,83 @@ body {
     justify-content: center;
     align-items: center;
     margin-block-end: 10em;
+} */
+.botonJugar{
+    position: relative;
+    display: inline-block;
+    padding: 15 px 30px;
+    color: #fff;
+    letter-spacing: 4px;
+    font-size: 24px;
+    text-decoration: none;
+    overflow: hidden;
+    transition: 0.2s;
+    margin-block-end: 2em;
+}
+.botonJugar:hover{
+    background: #a945c77a;
+    box-shadow: 0 0 10px #a945c7, 0 0 40px #a945c7, 0 0 80px #a945c7;
+    transition-delay: 0.75s;
+    height: 15em;
+    width: 25em;
+    border-color: white;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 50em 50em 50em 50em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.botonJugar span{
+    position:absolute;
+    display: block;
+}
+#span5{
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg,transparent,#a945c7);
+}
+.botonJugar:hover #span5{
+    left: 100%;
+    transition: 0.55s;
+}
+#span7{
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg,transparent,#a945c7);
+}
+.botonJugar:hover #span7{
+    left: 100%;
+    transition: 0.5s;
+    transition-delay: 0.15s;
+}
+#span6{
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,#a945c7);
+}
+.botonJugar:hover #span6{
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+#span8{
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,#a945c7);
+}
+.botonJugar:hover #span8{
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.35s;
 }
 
 
