@@ -36,8 +36,20 @@ body {
     font-size: 100px;
 }
 .cartelJugar{
-    background-color: transparent;
-    color: white;
+    position: relative;
+    display: inline-block;
+    padding: 15 px 30px;
+    color: #fff;
+    letter-spacing: 4px;
+    font-size: 24px;
+    text-decoration: none;
+    overflow: hidden;
+    transition: 0.2s;
+}
+.cartelJugar:hover{
+    background: #a945c77a;
+    box-shadow: 0 0 10px #a945c7, 0 0 40px #a945c7, 0 0 80px #a945c7;
+    transition-delay: 0.75s;
     height: 5em;
     width: 15em;
     border-color: white;
@@ -47,12 +59,64 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 10em;
+
+}
+.cartelJugar span{
+    position:absolute;
+    display: block;
+}
+#span1{
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg,transparent,#a945c7);
+}
+.cartelJugar:hover #span1{
+    left: 100%;
+    transition: 0.55s;
+}
+#span3{
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg,transparent,#a945c7);
+}
+.cartelJugar:hover #span3{
+    left: 100%;
+    transition: 0.5s;
+    transition-delay: 0.15s;
+}
+#span2{
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,#a945c7);
+}
+.cartelJugar:hover #span2{
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+#span4{
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,#a945c7);
+}
+.cartelJugar:hover #span4{
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.35s;
 }
 .letrasJugar{
     font-family: monospace;
     font-size: 40px;
 }
+
 /* PANTALLA 2 */
 .desingScreen2{
     height: 100vh;
@@ -72,6 +136,7 @@ body {
     align-items: center;
     justify-content: center;
     margin-top: 10em;
+    pointer-events: auto;
 }
 .soldaditoimg{
     height: 100%;
@@ -422,7 +487,7 @@ body {
     background-color: transparent;
     color: white;
     height: 5em;
-    width: 20em;
+    width: 25em;
     border-color: white;
     border-width: 2px;
     border-style: solid;

@@ -1,5 +1,4 @@
 
-
 //CAMBIO DE PANTALLAS DEL JUEGO
 
 const cambiaPantalla = (siguiente) => {
@@ -11,9 +10,7 @@ const cambiaPantalla = (siguiente) => {
         document.getElementById(pantalla).style.display = "none";
     }
 }
-
-
-// PANTALLA 2 DEL JUEGO (LA SELECCION DE EQUIPOS)
+            // PANTALLA 2 DEL JUEGO (LA SELECCION DE EQUIPOS)
 let soldadoPrimero="";
 let soldadoSegundo="";
 
@@ -38,21 +35,14 @@ const seleccionarSoldado = (nSoldado) => {
         },500);
     }
 }
-
-// PANTALLA 3 DEL JUEGO (LA BATALLA)
-
-
+                // PANTALLA 3 DEL JUEGO (LA BATALLA)
 const verJuego = () => {
     verEquipo1.innerHTML = `<img class="foto" style="width:15em;height:25em" src="img/${equipo1.fotoSoldado}.jpg" alt="primer_soldado"/>`;
     estEquipo1.innerHTML = `<div>NOMBRE => ${equipo1.nombre}<br>EDAD => ${equipo1.edad}<br>ATAQUE => ${equipo1.ataque}<br>DEFENSA => ${equipo1.defensa}</div>`;
     verEquipo2.innerHTML = `<img class="foto" style="width:15;height:25em" src="img/${equipo2.fotoSoldado}.jpg" alt"segundo_soldado"/>`;
     estEquipo2.innerHTML = `<div>NOMBRE => ${equipo2.nombre}<br>EDAD => ${equipo2.edad}<br>ATAQUE => ${equipo2.ataque}<br>DEFENSA => ${equipo1.defensa}</div>`;
 }
-
-
-
 const jugar = () => {
-    
     if(equipo1.vida <= vida_soldado){
         cambiaPantalla(4);
         winner.innerHTML = `<img class="foto" style="width:15;height:25em" src="img/${equipo1.fotoSoldado}.jpg" alt"primer_soldado"/>`;
@@ -65,14 +55,11 @@ const jugar = () => {
     }
     equipo1.atacar();
     equipo2.atacar();
-
     equipo1.defender();
     equipo2.defender();
-    
     console.log(vida1.innerHTML = `<p>VIDA => ${equipo1.vida}</p>`);
     console.log(vida2.innerHTML = `<p>VIDA => ${equipo2.vida}</p>`);
 }
-
 
 let verEquipo1 = document.getElementById("verSoldado1");
 let verEquipo2 = document.getElementById("verSoldado2");
@@ -82,23 +69,13 @@ let vidaEquipo1 = document.getElementById("vida1");
 let vidaEquipo2 = document.getElementById("vida2");
 let winner = document.getElementById("winner");
 
+            // FUNCION DE RESETEO DEL JUEGO
 
 function resetearJuego(){
     console.log("hola");
-    document.getElementById(1).classList.remove("soldadoSeleccionado");
-    document.getElementById(2).classList.remove("soldadoSeleccionado");
-    document.getElementById(3).classList.remove("soldadoSeleccionado");
-    document.getElementById(4).classList.remove("soldadoSeleccionado");
-    document.getElementById(5).classList.remove("soldadoSeleccionado");
-    document.getElementById(6).classList.remove("soldadoSeleccionado");
-    let uno = equipo1;
-    let dos = equipo2;
-    soldadoPrimero.onclick=`seleccionarSoldado(${uno})`;
-    soldadoPrimero.onclick=`seleccionarSoldado(${dos})`;
+    location.reload();
     equipo1 = "";
     equipo2 = "";
     ganador = "";
     cambiaPantalla(1);
-    // location.reload();
-    // document.getElementById("volver");
 }

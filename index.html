@@ -9,21 +9,22 @@
 </head>
 <body>
 
-    <!-- PANTALLA 1 DEL JUEGO -->
+                            <!-- PANTALLA 1 DEL JUEGO -->
     <section id="screen1">
         <div class="desingScreen1">
-        <!-- <div class="desingScreen1" id="home"> -->
             <div class="cartelCallofGeeks">
                 <h1 class="letrasCartel">CALL OF GEEKS</h1>
             </div>
             <div class="cartelJugar" onclick="cambiaPantalla(2)">
+                <span id="span1"></span>
+                <span id="span2"></span>
+                <span id="span3"></span>
+                <span id="span4"></span>
                 <h1 class="letrasJugar">JUGAR</h1>
             </div>
         </div>
     </section>
-    
-    <!-- PANTALLA 2 DEL JUEGO -->
-    <!-- onclick="cambiaPantalla(3)" -->
+                            <!-- PANTALLA 2 DEL JUEGO -->
     <section id="screen2" style="display:none">
     <div class="desingScreen2">
         <div class="soldados">
@@ -44,12 +45,6 @@
             </div>
             <div class="soldado6">
                 <img id=6 class="soldaditoimg" src="img/soldado6.jpg" onclick="seleccionarSoldado(6)">
-            </div>
-            <div class="soldadoSeleccionado">
-                <div id="data1" class="dataSoldado">
-                </div>
-                <div id="data2" class="dataSoldado">
-                </div>
             </div>
         </div>
         <div class="nombres">
@@ -95,12 +90,7 @@
         </div>
     </div>
     </section>
-    
-
-
-<!-- PANTALLA 3 DEL JUEGO -->
-<!-- onclick="cambiaPantalla(4)" -->
-
+                        <!-- PANTALLA 3 DEL JUEGO -->
     <section id="screen3" style="display:none">
         <div class="desingScreen3">
             <div class="soldadosBatalla">
@@ -128,13 +118,7 @@
             </div>
         </div>
     </section>
-
-
-
-
-
-
-
+                        <!--PANTALLA 4 DEL JUEGO -->
     <section id="screen4" style="display:none">
         <div class="desingScreen4">
             <div class="bordeGanador">
@@ -142,17 +126,14 @@
             </div>
             <div id="estGanador" class="estadisticaGanador"></div>
             <div class="cartelGanador">
-                <h1 class="letrasJugar">¡¡ A GANADO !!</h1>
+                <h1 class="letrasJugar">¡! HA GANADO ¡!</h1>
             </div>
             <div id="volver" style.display = "none" class="botonReiniciar" onclick="resetearJuego()">
                 <h1 class="letrasJugar">VOLVER A JUGAR</h1>
             </div>
         </div>
     </section>
-
-    <!-- onclick="resetearJuego()" -->
-    <!-- onclick="cambiaPantalla(1)" -->
-
+                        <!-- ENLACES A JAVASCRIPT -->
     <script src="js/soldados.js"></script>
     <script src="js/main.js"></script>
 </body>

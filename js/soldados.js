@@ -1,5 +1,5 @@
 
-// CLASES DE LOS SOLDADOS
+// CLASES DE SOLDADO
 class Soldado {
     constructor(nombre, edad, ataque, defensa, fotoSoldado){
         this.nombre = nombre;
@@ -7,7 +7,7 @@ class Soldado {
         this.ataque = ataque;
         this.defensa = defensa;
         this.fotoSoldado = fotoSoldado;
-        this.vida = 200;
+        this.vida = 100;
     }
     atacar(){
         return this.vida -= Math.floor(Math.random() * 20);
@@ -16,7 +16,6 @@ class Soldado {
         return this.vida += Math.floor(Math.random() * 5);
     }
 }
-
 
 let soldado1 = new Soldado (" Cabo ", 40, 150,100,"soldado1")
 let soldado2 = new Soldado (" Sargento ", 50, 151, 100,"soldado2")
