@@ -14,17 +14,21 @@ const cambiaPantalla = (siguiente) => {
 
 
 // PANTALLA 2 DEL JUEGO (LA SELECCION DE EQUIPOS)
+let soldadoPrimero="";
+let soldadoSegundo="";
 
 const seleccionarSoldado = (nSoldado) => {
+    console.log(nSoldado);
     if(equipo1 == ""){
+        
         equipo1 = todosSoldados[nSoldado];
-        let soldadoPrimero = document.getElementById(nSoldado);
+        soldadoPrimero = document.getElementById(nSoldado);
         //una vez he escogido el soldado, invalido el img para que nadie haga onclick sobre él
         soldadoPrimero.onclick = "";
         soldadoPrimero.classList.add("soldadoSeleccionado");
     } else if (equipo2 == ""){
         equipo2 = todosSoldados[nSoldado];
-        let soldadoSegundo = document.getElementById(nSoldado);
+        soldadoSegundo = document.getElementById(nSoldado);
         soldadoSegundo.onclick = "";
         soldadoSegundo.classList.add("soldadoSeleccionado");
         //una vez he escogido los dos soldados.........
@@ -80,7 +84,21 @@ let winner = document.getElementById("winner");
 
 
 function resetearJuego(){
+    console.log("hola");
+    document.getElementById(1).classList.remove("soldadoSeleccionado");
+    document.getElementById(2).classList.remove("soldadoSeleccionado");
+    document.getElementById(3).classList.remove("soldadoSeleccionado");
+    document.getElementById(4).classList.remove("soldadoSeleccionado");
+    document.getElementById(5).classList.remove("soldadoSeleccionado");
+    document.getElementById(6).classList.remove("soldadoSeleccionado");
+    let uno = equipo1;
+    let dos = equipo2;
+    soldadoPrimero.onclick=`seleccionarSoldado(${uno})`;
+    soldadoPrimero.onclick=`seleccionarSoldado(${dos})`;
+    equipo1 = "";
+    equipo2 = "";
+    ganador = "";
     cambiaPantalla(1);
-    location.reload();
-    document.getElementById("volver");
+    // location.reload();
+    // document.getElementById("volver");
 }
