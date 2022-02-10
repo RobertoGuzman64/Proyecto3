@@ -4,7 +4,6 @@ body {
     height: 100vh;
     width: 100vw;
 }
-
                         /* PANTALLA 1 */
 .desingScreen1{
     height: 100vh;
@@ -434,6 +433,7 @@ body {
     overflow: hidden;
     transition: 0.2s;
     margin-block-end: 2em;
+    user-select: none;
 }
 .botonJugar:hover{
     background: #a945c77a;

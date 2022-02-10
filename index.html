@@ -5,17 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Call of Geeks</title>
+            <!-- ENLACE A CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
+    <!-- onmousemove="reproducirSonido()"> -->
                             <!-- PANTALLA 1 DEL JUEGO -->
-    <section id="screen1">
+    <section id="screen1" onclick="reproducirSonido()">
+        <audio id="intro" src="../sound/intro.mp3"></audio>
         <div class="desingScreen1">
             <div class="cartelCallofGeeks">
                 <h1 class="letrasCartel">CALL OF GEEKS</h1>
             </div>
-            <div class="cartelJugar" onclick="cambiaPantalla(2)">
+            <div class="cartelJugar"onclick="cambiaPantalla(2)">
                 <span id="span1"></span>
                 <span id="span2"></span>
                 <span id="span3"></span>
@@ -27,7 +29,8 @@
                             <!-- PANTALLA 2 DEL JUEGO -->
     <section id="screen2" style="display:none">
     <div class="desingScreen2">
-        <div class="soldados">
+        <div class="soldados" id="audio1" onclick="reproducirSonido1()">
+            <audio id="jaja" src="../sound/jaja.mp3"></audio>
             <div class="soldado1">
                 <img id=1 class="soldaditoimg" src="img/soldado1.jpg" onclick="seleccionarSoldado(1)">
             </div>
@@ -111,7 +114,8 @@
                     <div id="vida2" class="vidSoldado"></div>
                 </div>
             </div>
-            <div id="botonAtacar" class="botonJugar" onclick="jugar()">
+            <div id="botonAtacar"class="botonJugar" onclick="jugar()">
+                <audio id="bat" src="../sound/batalla.mp3"></audio>
                 <span id="span5"></span>
                 <span id="span6"></span>
                 <span id="span7"></span>

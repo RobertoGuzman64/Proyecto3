@@ -7,7 +7,7 @@ class Soldado {
         this.ataque = ataque;
         this.defensa = defensa;
         this.fotoSoldado = fotoSoldado;
-        this.vida = 200;
+        this.vida = 400;
     }
     atacar(){
         return this.vida -= Math.floor(Math.random() * 20);

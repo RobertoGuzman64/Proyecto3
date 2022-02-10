@@ -53,6 +53,9 @@ const jugar = () => {
         winner.innerHTML = `<img class="foto" style="width:15;height:25em" src="img/${equipo2.fotoSoldado}.jpg" alt"primer_soldado"/>`;
         estGanador.innerHTML = `<div>NOMBRE => ${equipo2.nombre}<br>EDAD => ${equipo2.edad}<br>ATAQUE => ${equipo2.ataque}<br>DEFENSA => ${equipo2.defensa}`;
     }
+    let audio2 = document.getElementById("bat");
+    audio2.volume = 0.20;
+    audio2.play();
     equipo1.atacar();
     equipo2.atacar();
     equipo1.defender();
@@ -60,7 +63,7 @@ const jugar = () => {
     console.log(vida1.innerHTML = `<p>VIDA => ${equipo1.vida}</p>`);
     console.log(vida2.innerHTML = `<p>VIDA => ${equipo2.vida}</p>`);
 }
-
+        // VARIABLES DE LOS EQUIPOS Y DEL GANADOR
 let verEquipo1 = document.getElementById("verSoldado1");
 let verEquipo2 = document.getElementById("verSoldado2");
 let estEquipo1 = document.getElementById("est1");
@@ -73,5 +76,15 @@ let winner = document.getElementById("winner");
 
 function resetearJuego(){
     location.reload();
-    cambiaPantalla(1);
+}
+                // SONIDOS DEL JUEGO
+function reproducirSonido(){
+    let audio = document.getElementById("intro");
+    audio.volume = 0.20;
+    audio.play();
+}
+function reproducirSonido1(){
+    let audio1 = document.getElementById("jaja");
+    audio1.volume = 0.20;
+    audio1.play();
 }
