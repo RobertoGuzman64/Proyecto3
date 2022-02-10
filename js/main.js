@@ -72,10 +72,6 @@ let winner = document.getElementById("winner");
             // FUNCION DE RESETEO DEL JUEGO
 
 function resetearJuego(){
-    console.log("hola");
     location.reload();
-    equipo1 = "";
-    equipo2 = "";
-    ganador = "";
     cambiaPantalla(1);
 }

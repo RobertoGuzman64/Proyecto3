@@ -5,7 +5,7 @@ body {
     width: 100vw;
 }
 
-/* PANTALLA 1 */
+                        /* PANTALLA 1 */
 .desingScreen1{
     height: 100vh;
     width: 100vw;
@@ -18,6 +18,7 @@ body {
     background-image: url("../img/home.jpg")
     
 }
+                /* CARTEL DEL JUEGO PRINCIPAL */
 .cartelCallofGeeks{
     background-color: transparent;
     height: 10em;
@@ -35,6 +36,7 @@ body {
     font-family: fantasy;
     font-size: 100px;
 }
+                /* CARTEL DE INICIO DEL JUEGO */
 .cartelJugar{
     position: relative;
     display: inline-block;
@@ -118,7 +120,7 @@ body {
     user-select: none;
 }
 
-/* PANTALLA 2 */
+                    /* PANTALLA 2 */
 .desingScreen2{
     height: 100vh;
     width: 100vw;
@@ -130,6 +132,7 @@ body {
     justify-content: space-evenly;
     background-image: url("../img/P2\,3.jpg");
 }
+            /* CONTENEDOR DE LOS SOLDADOS */
 .soldados{
     height: 100vh;
     width: 100vw;
@@ -150,7 +153,6 @@ body {
     border-width: 4px;
     border-style: solid;
 }
-
 .soldado2{
     background-size: cover;
     background-position: center;
@@ -205,6 +207,7 @@ body {
     border-width: 4px;
     border-style: solid;
 }
+            /* CARTEL DE SELECCIONAR PERSONAJE */
 .cartelSeleccionar{
     background-color: transparent;
     color: white;
@@ -223,6 +226,7 @@ body {
     font-size: 50px;
     font-family: monospace;
 }
+        /* CONTENEDOR DE LOS NOMBRES DE LOS SOLDADOS EN HTML */
 .nombres{
     display: flex;
     align-items: center;
@@ -312,15 +316,12 @@ body {
     margin-block-end: 5em;
     margin-right: 3em;
 }
+        /* LO QUE HACE QUE SE VEA SELECCIONADO EL SOLDADO */
 .soldadoSeleccionado{
     -webkit-filter: grayscale(100%);
     filter:grayscale(100%)
 }
-.dataSoldado {
-    font-size: 3em;
-}
-                                               /* PANTALLA 3 */
-
+                       /* PANTALLA 3 */
 .desingScreen3{
     background-repeat: no-repeat;
     background-size: cover;
@@ -332,6 +333,7 @@ body {
     align-items: center;
     justify-content: center;
 }
+        /* CONTENEDOR DE LOS 2 SOLDADOS ENFRENTADOS */
 .soldadosBatalla{
     height: 100vh;
     width: 100vw;
@@ -345,12 +347,10 @@ body {
     justify-content: center;
     align-items: center;
 }
-
 .foto{
     height: 100%;
     width: 100%;
 }
-
 .estadisticasBatalla{
     height: 100vh;
     width: 100vw;
@@ -418,24 +418,11 @@ body {
     justify-content: center;
     align-items: center;
 }
+            /* CARTEL DE JUGAR */
 .rayGuns{
     height: 7em;
     width: 7em;
 }
-/* .botonJugar{boton original
-    background-color: transparent;
-    color: white;
-    height: 10em;
-    width: 25em;
-    border-color: white;
-    border-width: 2px;
-    border-style: solid;
-    border-radius: 50em 50em 50em 50em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-block-end: 10em;
-} */
 .botonJugar{
     position: relative;
     display: inline-block;
@@ -513,9 +500,7 @@ body {
     transition: 1s;
     transition-delay: 0.35s;
 }
-
-
-/* PANTALLA 4 */
+                /* PANTALLA 4 */
 .desingScreen4{
     height: 100vh;
     width: 100vw;
@@ -527,6 +512,7 @@ body {
     justify-content: space-evenly;
     background-image: url("../img/GAMEOVER.jpg")
 }
+            /* CONTENEDOR DE SOLDADO GANADOR */
 .bordeGanador{
     background-size: cover;
     background-repeat:no-repeat;
@@ -570,20 +556,7 @@ body {
     justify-content: center;
     align-items: center;
 }
-/* .botonReiniciar{                       boton original
-    background-color: transparent;
-    color: white;
-    height: 5em;
-    width: 25em;
-    border-color: white;
-    border-width: 2px;
-    border-style: solid;
-    border-radius: 50em 50em 50em 50em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-block-end: 5em;
-} */
+            /* BOTON DE REINICIAR EL JUEGO */
 .botonReiniciar{
     position: relative;
     display: inline-block;
@@ -594,7 +567,6 @@ body {
     text-decoration: none;
     overflow: hidden;
     transition: 0.2s;
-
 }
 .botonReiniciar:hover{
     background: #a945c77a;
